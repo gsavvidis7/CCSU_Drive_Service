@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="871c6d58-150c-4c5b-a81b-42fcc3bceee6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CCSU_Drive_Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CCSU_Drive_Service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
@@ -102,7 +99,7 @@
       <workItem from="1574221724843" duration="792000" />
       <workItem from="1574259839884" duration="9815000" />
       <workItem from="1574276855495" duration="709000" />
-      <workItem from="1574277586951" duration="2454000" />
+      <workItem from="1574277586951" duration="6341000" />
     </task>
     <servers />
   </component>
