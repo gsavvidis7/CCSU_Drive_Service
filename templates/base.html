@@ -4,11 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %} {% endblock %}</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{% static  'css/main.css' %}">
     {% block  styles %}
-        <img src="{% static 'img/CCSU_Logo.png' %}" alt="CCSU_Logo">
+        <header>
+            <img class="logo" src="{% static 'img/CCSU_Logo.png' %}" alt="CCSU_Logo">
+            <h1>Welcome to CCSU Campus Ride Portal</h1>
+            <nav class="navbar">
+                <ul class="links">
+                    <ul>
+                        <li><a href="#" class="home_mes"> <img class="home_icon" src="{% static 'img/home_icon.png' %}" alt="Home_icon"> &nbsp Home</a></li>
+                    </ul>
+                    <ul>
+
+                        <form>
+                            <li>Username : <input type="text" class="resize_box" value='' name="username"></li>
+                            <li>Password : <input type="password" class="resize_box"  name="password"></li>
+                            <li><a class="cta" href="#"><button>Sign in</button></a></li>
+
+                        </form>
+                    </ul>
+
+                    <li><a href="#" class="register_mes">Dont have an account? Register now!</a></li>
+                </ul>
+            </nav>
+
+        </header>
     {% endblock %}
-</head>
 <body>
 
     {% block content %}
