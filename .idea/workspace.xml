@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="871c6d58-150c-4c5b-a81b-42fcc3bceee6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CCSU_Drive_Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CCSU_Drive_Service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCSU_Drive_Service/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CCSU_Drive_Service/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCSU_Drive_Service/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CCSU_Drive_Service/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +35,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/GitHub/CS416Fall2019" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manage.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -86,7 +86,9 @@
       <option name="presentableId" value="Default" />
       <updated>1574195062721</updated>
       <workItem from="1574195065353" duration="1124000" />
-      <workItem from="1574196205725" duration="1682000" />
+      <workItem from="1574196205725" duration="1839000" />
+      <workItem from="1574216896129" duration="3105000" />
+      <workItem from="1574220629314" duration="920000" />
     </task>
     <servers />
   </component>
