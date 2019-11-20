@@ -4,6 +4,7 @@
     <list default="true" id="871c6d58-150c-4c5b-a81b-42fcc3bceee6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/CCSU_Drive_Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CCSU_Drive_Service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCSU_Drive_Service/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CCSU_Drive_Service/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
@@ -89,6 +90,7 @@
       <workItem from="1574196205725" duration="1839000" />
       <workItem from="1574216896129" duration="3105000" />
       <workItem from="1574220629314" duration="920000" />
+      <workItem from="1574221724843" duration="259000" />
     </task>
     <servers />
   </component>
