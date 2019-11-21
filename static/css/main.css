@@ -5,42 +5,37 @@
     margin:0;
 }
 
-nav li {
-    list-style: none;
-}
 li, a, button, h1 {
     font-family: "Berlin Sans FB", serif;
-    font-size: 80px;
+    font-size: 20px;
     color: antiquewhite;
     text-decoration: none;
 }
 
 h1 {
-    font-size: 160px
+    font-size: 40px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 2%;
+    padding: 7px 1%;
     border-bottom: 1px solid white;
-
-
 }
 
 .home_mes {
     color: deepskyblue;
 }
 .logo{
-    height: 600px;
-    width: 600px;
+    height: 150px;
+    width: 150px;
     display: inline-block;
 }
 
 .home_icon {
-    height: 130px;
-    width: 130px;
+    height: 32px;
+    width: 32px;
     display: inline-block;
 }
 .links {
@@ -49,7 +44,7 @@ header {
 
 .links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 5px;
 }
 
 .links li a:hover {
@@ -57,10 +52,10 @@ header {
 }
 
 button {
-    padding: 10px 25px;
+    padding: 2px 6px;
     background-color: rgba(0,136,169,1);
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -70,9 +65,9 @@ button:hover {
 
 .resize_box {
 
-    height: 80px;
-    width: 450px;
-    font-size: 60px;
+    height: 20px;
+    width: 112px;
+    font-size: 15px;
     background-color: aliceblue;
 }
 
