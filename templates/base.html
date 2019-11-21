@@ -11,21 +11,23 @@
             <img class="logo" src="{% static 'img/CCSU_Logo.png' %}" alt="CCSU_Logo">
             <h1>Welcome to CCSU Campus Ride Portal</h1>
             <nav class="navbar">
-                <ul class="links">
+                <div class="links">
                     <ul>
                         <li><a href="#" class="home_mes"> <img class="home_icon" src="{% static 'img/home_icon.png' %}" alt="Home_icon"> &nbsp Home</a></li>
                     </ul>
-                    <ul>
-
-                        <form>
-                            <li>BlueNet Account : <input type="text" class="resize_box" value='' name="username"></li>
-                            <li>Password : <input type="password" class="resize_box"  name="password"></li>
-                            <li><a class="cta" href="#"><button>Sign in</button></a></li>
+                    <div>
+                        <form method=POST>
+                            <ul>
+                                <li><label for="bluenet_acct">BlueNet Account : </label><input type="text" class="resize_box" value='' name="username" id="bluenet_acct"></li>
+                                <li><label for="password">Password : </label><input type="password" class="resize_box" name="password" id="password"></li>
+                                <li><a class="cta" href="#"><button>Sign in</button></a></li>
+                            </ul>
                         </form>
+                    </div>
+                    <ul>
+                        <li><h4 class="register_mes">Sign in to give and get rides to local events now!</h4></li>
                     </ul>
-
-                    <li><h4 class="register_mes">Sign in to give and get rides to local events now!</h4></li>
-                </ul>
+                </div>
             </nav>
 
         </header>
