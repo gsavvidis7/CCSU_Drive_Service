@@ -27,10 +27,12 @@ header {
 .home_mes {
     color: deepskyblue;
 }
+
 .logo{
     height: 150px;
     width: 150px;
     display: inline-block;
+    margin-left: 40px;
 }
 
 .home_icon {
@@ -38,13 +40,27 @@ header {
     width: 32px;
     display: inline-block;
 }
-.links {
-    list-style: none;
+.prof_icon {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
 }
 
+.prof_mes {
+    color: white;
+    margin-right: 40px;
+}
+.links {
+    list-style: none;
+
+}
+
+.hello_mes {
+    color: red;
+}
 .links li {
     display: inline-block;
-    padding: 0px 5px;
+    padding: 0 5px;
 }
 
 .links li a:hover {
@@ -71,6 +87,9 @@ button:hover {
     background-color: aliceblue;
 }
 
+.welcome_mes {
+    color: white;
+}
 .register_mes {
     color: red;
 }

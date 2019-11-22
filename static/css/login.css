@@ -1,0 +1,18 @@
+header {
+    justify-content: center;
+}
+.welcome_mes {
+    margin-left: 23px;
+}
+
+.logo {
+    margin-left: 23px;
+}
+
+.links {
+    display: inline-block;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}

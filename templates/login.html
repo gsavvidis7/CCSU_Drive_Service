@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Login {% endblock %}
+
+{% block styles %} <link rel="stylesheet" href="{% static  'css/login.css' %}"> {% endblock %}
+
+{% block blockheader %}
+{% endblock %}
+{% block content %}
+    <br><br><br><br>
+            <div class="links">
+                <form method=POST>
+                    <ul>
+                        <li><label for="bluenet_acct">Username : </label><input type="text" class="resize_box" value='' name="username" id="bluenet_acct"></li>
+                        <li><label for="password">Password : </label><input type="password" class="resize_box" name="password" id="password"></li>
+                        <li><a class="cta" href="#"><button>Sign in</button></a></li>
+                    </ul>
+                </form>
+                <ul>
+                    <li><a class="register_mes" href="#">Register to be a driver now!</a></li>
+                </ul>
+            </div>
+{% endblock %}
