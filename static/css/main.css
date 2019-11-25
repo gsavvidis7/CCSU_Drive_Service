@@ -81,8 +81,8 @@ button:hover {
 
 .resize_box {
 
-    height: 20px;
-    width: 112px;
+    height: 25px;
+    width: 200px;
     font-size: 15px;
     background-color: aliceblue;
 }
