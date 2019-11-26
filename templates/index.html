@@ -6,7 +6,7 @@
 {% block blockheader %}
        <div class="links">
             <ul>
-                <li><a href="#" class="home_mes"> <img class="home_icon" src="{% static 'img/home_icon.png' %}" alt="Home_icon"> &nbsp Home</a></li>
+                <li><a href="{% url 'index' %}" class="home_mes"> <img class="home_icon" src="{% static 'img/home_icon.png' %}" alt="Home_icon"> &nbsp Home</a></li>
                 <li><a href="#" class="prof_mes"> <img class="prof_icon" src="{% static 'img/prof_icon.png' %}" alt="Prof_icon"> &nbsp View Profile</a></li>
             </ul>
             <ul>
@@ -17,5 +17,21 @@
 {% endblock %}
 
 {% block content %}
+
+    <h1 class="cat_message">Select a Category to Search ...</h1>
+    <div id="genre_disp">
+        <div id="left">
+            <h1>Sports</h1>
+            <a href="#" class="sports_icon"> <img class="sports_icon" src="{% static 'img/sports.jpg' %}" alt="Sports_pic"></a>
+        </div>
+        <div id="middle">
+            <h1>Concerts</h1>
+            <a href="#" class="concert_icon"> <img class="concert_icon" src="{% static 'img/concerts.jpg' %}" alt="Concert_pic"></a>
+        </div>
+        <div id="right">
+            <h1>Other</h1>
+            <a href="#" class="theater_icon"> <img class="theater_icon" src="{% static 'img/theater.jpg' %}" alt="Theater_pic"></a>
+        </div>
+    </div>
 
 {% endblock %}

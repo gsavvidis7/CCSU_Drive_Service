@@ -8,7 +8,7 @@
 {% block content %}
 
     <div id="container">
-        <h1 class="reg_message">Register</h1>
+        <h1 class="reg_message">Registration</h1>
         <div id="left">
             <ul>
                 <li>First Name:</li>
@@ -24,7 +24,10 @@
                 <li><label for=username"><input type="text" name="username" placeholder="Username"></label></li>
                 <li><label for=password"><input type="password" name="password" placeholder="Password"></label></li>
                 <li><label for=password2"><input type="password" name="password2" placeholder="Re-Type Password"></label></li>
-                <li><a class="reg_button" href="#"><button>Register</button></a></li>
+                <li>
+                    <a class="reg_button" href="#"><button>Register</button></a> &nbsp
+                    <a class="back_button" href="{% url 'login' %}"><button>Back</button></a>
+                </li>
             </ul>
         </div>
     </div>
