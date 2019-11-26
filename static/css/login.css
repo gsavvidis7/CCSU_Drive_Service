@@ -2,24 +2,36 @@ header {
     justify-content: center;
 }
 
-.welcome_mes {
-    margin-left: 23px;
-}
-
-.logo {
+.welcome_mes, .logo{
     margin-left: 23px;
 }
 
 .links {
-    margin: auto;
+    margin: 80px auto auto auto;
     width: 35%;
     border: 3px solid white;
     padding: 30px;
     text-align: center;
-
 }
 
 .login_mes{
     font-size: 40px;
+    margin-bottom: 90px;
     text-decoration: underline;
+}
+
+.cta {
+    margin-left: 235px;
+}
+
+#bluenet_acct, #password {
+    margin-bottom: 40px;
+}
+
+.reg_box {
+    margin-top: 70px;
+}
+
+.register_mes {
+    color: red;
 }

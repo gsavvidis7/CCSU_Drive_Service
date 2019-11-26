@@ -1,0 +1,40 @@
+@import url("login.css");
+
+#container{
+    padding: 10px;
+    width: 340px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#container #left{
+    width: 100px;
+    float: left;
+    margin-top: 60px;
+}
+
+#container #right {
+    width: 200px;
+    float: right;
+    margin-top: 60px;
+
+}
+
+.reg_message {
+    text-decoration: underline;
+}
+li {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom:20px;
+}
+
+input {
+    color: white;
+}
+
+.reg_button {
+    margin-top: 50px;
+}

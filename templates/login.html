@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'index.html' %}
 {% load static %}
 
 {% block title %} Login {% endblock %}
@@ -7,25 +7,19 @@
 
 {% block blockheader %}
 {% endblock %}
-{% block content %}
-    <br><br><br><br><br>
 
+{% block content %}
             <div class="links">
                 <form method=POST>
                     <ul>
                         <li class="login_mes">Rideshare Login</li>
-                        <br> <br> <br> <br>
                         <li><label for="bluenet_acct">Username &nbsp &nbsp</label><input type="text" class="resize_box" value='' name="username" id="bluenet_acct"></li>
-                        <br> <br> <br>
                         <li><label for="password">Password &nbsp &nbsp </label><input type="password" class="resize_box" name="password" id="password"></li>
-                        <br> <br> <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                         <li><a class="cta" href="#"><button>Sign in</button></a></li>
                     </ul>
                 </form>
-                <br> <br> <br> <br>
-                <ul>
-                    <li><a class="register_mes" href="#">Don't have an account. Register now!</a></li>
+                <ul class="reg_box">
+                    <li><a class="register_mes" href="{% url 'register' %}">Don't have an account. Register now!</a></li>
                 </ul>
             </div>
 {% endblock %}

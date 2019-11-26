@@ -35,12 +35,7 @@ header {
     margin-left: 40px;
 }
 
-.home_icon {
-    height: 32px;
-    width: 32px;
-    display: inline-block;
-}
-.prof_icon {
+.home_icon, .prof_icon {
     height: 32px;
     width: 32px;
     display: inline-block;
@@ -54,7 +49,6 @@ header {
     list-style: none;
 
 }
-
 .hello_mes {
     color: red;
 }
@@ -89,7 +83,4 @@ button:hover {
 
 .welcome_mes {
     color: white;
-}
-.register_mes {
-    color: red;
 }

@@ -1,0 +1,32 @@
+{% extends 'login.html' %}
+{% load static %}
+
+{% block title %} Register {% endblock %}
+
+{% block styles %} <link rel="stylesheet" href="{% static 'css/register.css' %}"> {% endblock %}
+
+{% block content %}
+
+    <div id="container">
+        <h1 class="reg_message">Register</h1>
+        <div id="left">
+            <ul>
+                <li>First Name:</li>
+                <li>Last Name:</li>
+                <li>Username:</li>
+                <li>Password:</li>
+            </ul>
+        </div>
+        <div id="right">
+            <ul>
+                <li><label for=firstName"><input type="text" name="firstName" placeholder="First Name"></label></li>
+                <li><label for=lastName"><input type="text" name="lastName" placeholder="Last Name"></label></li>
+                <li><label for=username"><input type="text" name="username" placeholder="Username"></label></li>
+                <li><label for=password"><input type="password" name="password" placeholder="Password"></label></li>
+                <li><label for=password2"><input type="password" name="password2" placeholder="Re-Type Password"></label></li>
+                <li><a class="reg_button" href="#"><button>Register</button></a></li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}

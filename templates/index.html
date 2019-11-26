@@ -1,22 +1,19 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %} Home {% endblock %}
 
-{% load static %}
 {% block blockheader %}
-
        <div class="links">
             <ul>
-
                 <li><a href="#" class="home_mes"> <img class="home_icon" src="{% static 'img/home_icon.png' %}" alt="Home_icon"> &nbsp Home</a></li>
                 <li><a href="#" class="prof_mes"> <img class="prof_icon" src="{% static 'img/prof_icon.png' %}" alt="Prof_icon"> &nbsp View Profile</a></li>
-
             </ul>
             <ul>
                 <li class = "hello_mes">Hello, Name </li>
             </ul>
-
        </div>
+
 {% endblock %}
 
 {% block content %}
