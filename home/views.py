@@ -3,14 +3,34 @@ from django.contrib.auth.models import User, auth
 from django.contrib import messages
 
 
-
-# Create your views here.
 def index(request):
     return render(request, 'index.html')
 
 
-def login(request):
+def loginpg(request):
     return render(request, 'login.html')
+
+
+def login(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+
+        user = auth.authenticate(username=username, password=password)
+
+        if user is not None:
+            auth.login(request, user)
+            return redirect('index')
+        else:
+            messages.info(request, 'Invalid credentials')
+            return redirect('login')
+    else:
+        return render(request, 'index.html')
+
+
+def logout(request):
+    auth.logout(request)
+    return redirect('login')
 
 
 def register(request):
@@ -44,22 +64,3 @@ def register(request):
 
     else:
         return render(request, 'register.html')
-
-def login(request):
-    #this is the method that authenticates the user based on username and password,
-    #also renders the login page if the request method is not a post
-    if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-
-        user = auth.authenticate(username=username, password=password)
-
-        # Show the the index page if the user is authenticated, else give feedback saying invalid credentials
-        if user is not None:
-            auth.login(request, user)
-            return redirect('index')
-        else:
-            messages.info(request, 'Invalid credentials')
-            return redirect('login')
-    else:
-        return render(request, 'login.html')
