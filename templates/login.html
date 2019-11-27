@@ -9,6 +9,9 @@
 {% endblock %}
 
 {% block content %}
+    {% for message in messages %}
+        <h3 style="color: red">{{ message }}</h3>
+    {% endfor %}
             <div class="links">
                     <form action="{% url 'login' %}" method="POST"> {% csrf_token %}
                     <ul>

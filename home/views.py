@@ -7,10 +7,6 @@ def index(request):
     return render(request, 'index.html')
 
 
-def loginpg(request):
-    return render(request, 'login.html')
-
-
 def login(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -25,12 +21,12 @@ def login(request):
             messages.info(request, 'Invalid credentials')
             return redirect('login')
     else:
-        return render(request, 'index.html')
+        return render(request, 'login.html')
 
 
 def logout(request):
     auth.logout(request)
-    return redirect('login')
+    return render(request, 'login.html')
 
 
 def register(request):
