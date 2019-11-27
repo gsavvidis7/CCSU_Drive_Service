@@ -8,13 +8,19 @@
 {% block content %}
 
     <div id="container">
-        <h1 class="reg_message">Registration</h1>
+        <div>
+            <h1 class="reg_message">Registration</h1>
+        </div>
         <div id="left">
+            <img class="bluedevil" src="{% static 'img/bluedevil.jpg' %}" alt="Bluedevil_img">
+        </div>
+        <div id="middle">
             <ul>
-                <li>First Name:</li>
-                <li>Last Name:</li>
-                <li>Username:</li>
-                <li>Password:</li>
+                <li>First Name</li>
+                <li>Last Name</li>
+                <li>Email Addr</li>
+                <li>Username</li>
+                <li>Password</li>
             </ul>
         </div>
         <div id="right">
@@ -22,6 +28,7 @@
                 <ul>
                     <li><label><input type="text" name="first_name" placeholder="First Name"></label></li>
                     <li><label><input type="text" name="last_name" placeholder="Last Name"></label></li>
+                    <li><label><input type="text" name="email" placeholder="Email"></label></li>
                     <li><label><input type="text" name="username" placeholder="Username"></label></li>
                     <li><label><input type="password" name="password1" placeholder="Password"></label></li>
                     <li><label><input type="password" name="password2" placeholder="Re-Type Password"></label></li>

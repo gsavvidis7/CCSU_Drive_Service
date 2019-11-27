@@ -10,7 +10,7 @@
 
 {% block content %}
             <div class="links">
-                <form method=POST>
+                    <form action="{% url 'login' %}" method="POST"> {% csrf_token %}
                     <ul>
                         <li class="login_mes">Rideshare Login</li>
                         <li><label for="bluenet_acct">Username &nbsp &nbsp</label><input type="text" class="resize_box" value='' name="username" id="bluenet_acct"></li>

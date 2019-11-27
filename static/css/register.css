@@ -2,23 +2,30 @@
 
 #container{
     padding: 10px;
-    width: 340px;
-    margin-left: 10px;
-    margin-top: 30px;
+    width: 800px;
+    margin: 80px auto auto auto;
+    justify-content: center;
+    text-align: center;
 }
 
-#container #left{
+#container #left {
+    float: left;
+    margin: 50px 30px auto 110px;
+}
+
+#container #middle{
     width: 100px;
     float: left;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 #container #right {
     width: 200px;
-    float: right;
-    margin-top: 60px;
-
+    float: left;
+    margin-top: 50px;
+    margin-left: 20px;
 }
+
 
 .reg_message {
     text-decoration: underline;
@@ -28,10 +35,10 @@ li {
 }
 
 ul li {
-    margin-bottom:20px;
+    margin-bottom:40px;
 }
 
 input {
-    color: white;
+    background-color: aliceblue;
 }
 
