@@ -20,10 +20,10 @@
         <div id="right">
             <form action="{% url 'register' %}" method="POST"> {% csrf_token %}
                 <ul>
-                    <li><label><input type="text" name="firstname" placeholder="First Name"></label></li>
-                    <li><label><input type="text" name="lastname" placeholder="Last Name"></label></li>
+                    <li><label><input type="text" name="first_name" placeholder="First Name"></label></li>
+                    <li><label><input type="text" name="last_name" placeholder="Last Name"></label></li>
                     <li><label><input type="text" name="username" placeholder="Username"></label></li>
-                    <li><label><input type="password" name="password" placeholder="Password"></label></li>
+                    <li><label><input type="password" name="password1" placeholder="Password"></label></li>
                     <li><label><input type="password" name="password2" placeholder="Re-Type Password"></label></li>
                     <li>
                         <button>Register</button> &nbsp

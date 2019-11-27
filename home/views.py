@@ -14,24 +14,21 @@ def login(request):
 
 
 def register(request):
-    return render(request, 'register.html')
-
-
-def register(request):
     if request.method == 'POST':
-        firstname = request.POST['firstname']
-        lastname = request.POST['lastname']
+        first_name = request.POST['first_name']
+        last_name = request.POST['last_name']
         username = request.POST['username']
-        password = request.POST['password']
+        password1 = request.POST['password1']
         password2 = request.POST['password2']
 
-        if password == password2:
+        if password1 == password2:
             if User.objects.filter(username=username).exists():
                 print("Error: Username already taken")
                 messages.info(request, 'Error: Username already taken')
                 return redirect('register')
             else:
-                User.objects.create_user(firstname=firstname, lastname=lastname, username=username, password=password)
+                User.objects.create_user(first_name=first_name, last_name=last_name, username=username,
+                                         password=password1)
                 print("Registration complete")
         else:
             print("Error: Passwords must match")
