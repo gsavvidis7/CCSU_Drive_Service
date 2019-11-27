@@ -9,12 +9,14 @@
 {% endblock %}
 
 {% block content %}
-    {% for message in messages %}
-        <h3 style="color: red">{{ message }}</h3>
-    {% endfor %}
+
             <div class="links">
                     <form action="{% url 'login' %}" method="POST"> {% csrf_token %}
                     <ul>
+                        {% for message in messages %}
+                            <h3 style="color: yellow">{{ message }}</h3>
+                            <h3 style="color: yellow">Please try again</h3>
+                        {% endfor %}
                         <li class="login_mes">Rideshare Login</li>
                         <li><label for="bluenet_acct">Username &nbsp &nbsp</label><input type="text" class="resize_box" value='' name="username" id="bluenet_acct"></li>
                         <li><label for="password">Password &nbsp &nbsp </label><input type="password" class="resize_box" name="password" id="password"></li>
