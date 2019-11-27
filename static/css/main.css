@@ -28,6 +28,20 @@ header {
     color: deepskyblue;
 }
 
+.logout_mes {
+    color: green;
+}
+
+.prof_mes {
+    color: white;
+}
+
+.home_icon, .prof_icon, .logout_icon {
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+}
+
 .logo{
     height: 150px;
     width: 150px;
@@ -35,16 +49,6 @@ header {
     margin-left: 40px;
 }
 
-.home_icon, .prof_icon {
-    height: 32px;
-    width: 32px;
-    display: inline-block;
-}
-
-.prof_mes {
-    color: white;
-    margin-right: 40px;
-}
 .links {
     list-style: none;
 
@@ -88,7 +92,7 @@ button:hover {
 #genre_disp{
     padding: 10px;
     width: 1000px;
-    margin: auto auto auto 380px;
+    margin: auto auto auto 320px;
 }
 
 #genre_disp #left, #genre_disp #middle, #genre_disp #right{

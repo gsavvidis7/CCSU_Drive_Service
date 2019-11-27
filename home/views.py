@@ -56,7 +56,7 @@ def register(request):
             messages.info(request, 'Error: Passwords must match')
             return redirect('register')
 
-        return redirect('index')
+        return redirect('login')
 
     else:
         return render(request, 'register.html')
