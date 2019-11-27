@@ -18,17 +18,19 @@
             </ul>
         </div>
         <div id="right">
-            <ul>
-                <li><label for=firstName"><input type="text" name="firstName" placeholder="First Name"></label></li>
-                <li><label for=lastName"><input type="text" name="lastName" placeholder="Last Name"></label></li>
-                <li><label for=username"><input type="text" name="username" placeholder="Username"></label></li>
-                <li><label for=password"><input type="password" name="password" placeholder="Password"></label></li>
-                <li><label for=password2"><input type="password" name="password2" placeholder="Re-Type Password"></label></li>
-                <li>
-                    <a class="reg_button" href="#"><button>Register</button></a> &nbsp
-                    <a class="back_button" href="{% url 'login' %}"><button>Back</button></a>
-                </li>
-            </ul>
+            <form action="{% url 'register' %}" method="POST"> {% csrf_token %}
+                <ul>
+                    <li><label><input type="text" name="firstname" placeholder="First Name"></label></li>
+                    <li><label><input type="text" name="lastname" placeholder="Last Name"></label></li>
+                    <li><label><input type="text" name="username" placeholder="Username"></label></li>
+                    <li><label><input type="password" name="password" placeholder="Password"></label></li>
+                    <li><label><input type="password" name="password2" placeholder="Re-Type Password"></label></li>
+                    <li>
+                        <button>Register</button> &nbsp
+                        <a class="back_button" href="{% url 'login' %}"><button type="button">Back</button></a>
+                    </li>
+                </ul>
+            </form>
         </div>
     </div>
 
