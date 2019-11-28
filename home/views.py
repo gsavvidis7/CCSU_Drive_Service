@@ -38,6 +38,12 @@ def register(request):
         password1 = request.POST['password1']
         password2 = request.POST['password2']
 
+        if first_name is "" or last_name is "" or email is "" or username is \
+                "" or password1 is "" or password2 is "":
+            print("Error: Must complete each field")
+            messages.info(request, "Error: Must complete each field")
+            return redirect('register')
+
         if password1 == password2:
             if User.objects.filter(username=username).exists():
                 print("Error: Username already taken")
