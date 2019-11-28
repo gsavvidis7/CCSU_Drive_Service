@@ -23,15 +23,15 @@
     <div id="genre_disp">
         <div id="left">
             <h1>Sports</h1>
-            <a href="{% url 'view_events' %}" class="sports_icon"> <img class="sports_icon" src="{% static 'img/sports.jpg' %}" alt="Sports_pic"></a>
+            <a href="{% url 'view_sports' %}" class="sports_icon"> <img class="sports_icon" src="{% static 'img/sports.jpg' %}" alt="Sports_pic"></a>
         </div>
         <div id="middle">
             <h1>Concerts</h1>
-            <a href="#" class="concert_icon"> <img class="concert_icon" src="{% static 'img/concerts.jpg' %}" alt="Concert_pic"></a>
+            <a href="{% url 'view_concerts' %}" class="concert_icon"> <img class="concert_icon" src="{% static 'img/concerts.jpg' %}" alt="Concert_pic"></a>
         </div>
         <div id="right">
             <h1>Other</h1>
-            <a href="#" class="theater_icon"> <img class="theater_icon" src="{% static 'img/theater.jpg' %}" alt="Theater_pic"></a>
+            <a href="{% url 'view_other' %}" class="theater_icon"> <img class="theater_icon" src="{% static 'img/theater.jpg' %}" alt="Theater_pic"></a>
         </div>
     </div>
 
