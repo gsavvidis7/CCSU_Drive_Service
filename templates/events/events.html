@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Events {% endblock %}
+
+{% block styles %} <link rel="stylesheet" href="{% static  'css/events.css' %}"> {% endblock %}
+
+{% block blockheader %}
+       <div class="links">
+           <ul>
+                <li class = "hello_mes">Hello, {{ user.first_name }} </li>
+            </ul>
+            <ul>
+                <li><a href="{% url 'index' %}" class="home_mes"> <img class="home_icon" src="{% static 'img/home_icon.png' %}" alt="Home_icon"> &nbsp Home</a></li>
+                <li><a href="{% url 'logout' %}" class="prof_mes"> <img class="prof_icon" src="{% static 'img/prof_icon.png' %}" alt="Prof_icon"> &nbsp View Profile</a></li>
+                <li><a href="{% url 'logout' %}" class="logout_mes"> <img class="logout_icon" src="{% static 'img/logout.png' %}" alt="Logout_icon">&nbsp Log Out</a></li>
+            </ul>
+       </div>
+{% endblock %}
+
+{% block content %}
+    <div class="eventhead">
+        <h1><u>Events</u></h1>
+    </div>
+
+    {% for event in events %}
+        <div>
+            <form action="{% url 'signup' %}" method="POST"> {% csrf_token %}
+                <h2>{{ event.id }} | {{ event.name }}</h2>
+                <p>{{ event.description }}</p>
+                <br>
+                <input type="radio" name="type" value="driver"> Driver
+                <input type="radio" name="type" value="rider" checked="checked"> Rider
+                <br><br>
+                <input type="submit" value="sign up" class="subbtn">
+            </form>
+        </div>
+        <br><hr><br>
+    {% endfor %}
+
+{% endblock %}
