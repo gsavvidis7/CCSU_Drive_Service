@@ -26,6 +26,8 @@
     {% for event in events %}
         <div>
             <form action="{% url 'signup' %}" method="POST"> {% csrf_token %}
+                <input type="text" name="eventname" value={{ event.id }} hidden>
+                <input type="text" name="driverid" value={{ user.id }} hidden>
                 <h2>{{ event.id }} | {{ event.name }}</h2>
                 <p>{{ event.description }}</p>
                 <br>

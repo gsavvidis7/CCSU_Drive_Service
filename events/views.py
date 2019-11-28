@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Event, Driver, Rider
+from django.contrib import messages
+from django.contrib.auth.models import User
 
 
 def view_events(request):
@@ -25,11 +27,14 @@ def view_other(request):
 def signup(request):
     if request.method == 'POST':
         type = request.POST.get("type", None)
-        #event =
-        #driver =
-        #cap = 3
         if type in "driver":
-            #driverentry = Driver(event=event, driver=driver, capacity=cap).save()
+            getevent = request.POST.get('eventname')
+            getuser = request.POST.get('driverid')
+            eventinstance = Event.objects.get(id=getevent)
+            userinstance = User.objects.get(id=getuser)
+            cap = 3
+            driverentry = Driver(event=eventinstance, driver=userinstance, capacity=cap)
+            driverentry.save()
             return render(request, 'events/driver.html')
         elif type in "rider":
             return render(request, 'events/rider.html')
