@@ -5,6 +5,10 @@
     margin:0;
 }
 
+body{
+    color: white;
+}
+
 li, a, button, h1 {
     font-family: "Berlin Sans FB", serif;
     font-size: 20px;
