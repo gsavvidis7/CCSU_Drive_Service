@@ -20,9 +20,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -133,6 +133,7 @@
       <workItem from="1574881456882" duration="1406000" />
       <workItem from="1574883600149" duration="3505000" />
       <workItem from="1574887599501" duration="9457000" />
+      <workItem from="1575151846773" duration="4074000" />
     </task>
     <task id="LOCAL-00001" summary="Added logout to index and got login name working">
       <created>1574884991699</created>

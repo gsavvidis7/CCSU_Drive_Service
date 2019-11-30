@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from .models import Event, Driver, Rider
-from django.contrib import messages
 from django.contrib.auth.models import User
 
 
@@ -29,14 +28,28 @@ def signup(request):
         type = request.POST.get("type", None)
         if type in "driver":
             getevent = request.POST.get('eventname')
-            getuser = request.POST.get('driverid')
+            getdriver = request.POST.get('driverid')
             eventinstance = Event.objects.get(id=getevent)
-            userinstance = User.objects.get(id=getuser)
-            cap = 3
+            userinstance = User.objects.get(id=getdriver)
+            cap = request.POST.get('captext')
             driverentry = Driver(event=eventinstance, driver=userinstance, capacity=cap)
             driverentry.save()
             return render(request, 'events/driver.html')
         elif type in "rider":
-            return render(request, 'events/rider.html')
+            getriderevent = request.POST.get('eventname')
+            ridereventinstance = Event.objects.get(id=getriderevent)
+            finddriver = Driver.objects.filter(event=ridereventinstance, capacity__gt=0).first()
+            if finddriver is not None:
+                driverinstance = finddriver
+                getrider = request.POST.get('driverid')
+                riderinstance = User.objects.get(id=getrider)
+                riderentry = Rider(driver=driverinstance, rider=riderinstance)
+                riderentry.save()
+                test = finddriver.capacity
+                finddriver.capacity = test - 1
+                finddriver.save()
+                return render(request, 'events/rider.html')
+            else:
+                return render(request, 'events/none.html')
     else:
         return redirect('index')

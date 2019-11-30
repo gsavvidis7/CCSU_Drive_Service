@@ -20,30 +20,6 @@
 
 {% block content %}
     <div class="eventhead">
-        <h1><u>Events</u></h1>
+        <h1><u>SORRY THERE ARE NO CURRENT DRIVERS FOR THIS EVENT.</u></h1>
     </div>
-
-
-    {% for event in events %}
-        <div>
-            <form action="{% url 'signup' %}" method="POST" id="signform">
-                {% csrf_token %}
-                <input type="text" name="eventname" value={{ event.id }} hidden>
-                <input type="text" name="driverid" value={{ user.id }} hidden>
-                <h2>{{ event.id }} | {{ event.name }}</h2>
-                <p>{{ event.description }}</p>
-                <br>
-                <input type="radio" name="type" value="driver" onclick="showCap()"> Driver
-                <input type="radio" name="type" value="rider" checked="checked" onclick="hideCap()"> Rider
-                <div>
-                    <br>
-                    Capacity: <input type="text" name="captext">
-                </div>
-                <br>
-                <input type="submit" value="sign up" class="subbtn">
-            </form>
-        </div>
-        <br><hr><br>
-    {% endfor %}
-
 {% endblock %}
