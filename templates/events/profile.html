@@ -20,6 +20,16 @@
 
 {% block content %}
     <div class="eventhead">
-        <h1><u>YOU HAVE SIGNED UP TO BE A RIDER</u></h1>
+        <h1><u>User Profile</u></h1>
     </div>
+    <br><br><br>
+
+    <div style="text-align: center">
+        <div >
+            <a href="{% url 'view_driver_profile' %}">View Driver Events </a>
+            &nbsp | &nbsp
+            <a href="{% url 'view_rider_profile' %}"> View Rider Events</a>
+        </div>
+    </div>
+
 {% endblock %}

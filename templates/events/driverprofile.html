@@ -20,6 +20,20 @@
 
 {% block content %}
     <div class="eventhead">
-        <h1><u>YOU HAVE SIGNED UP TO BE A RIDER</u></h1>
+        <h1><u>User Profile</u></h1>
     </div>
+
+    <h1>Driver Events</h1><br>
+    {% for driver in drivers %}
+        <div>
+            <form action="{% url 'remove_driver_entry' %}" method="POST" id="delform">
+                {% csrf_token %}
+                <h2 style="display: inline"> {{driver.event.name}} | Seats Left: {{ driver.capacity }}</h2>
+                <input type="submit" value="Remove Entry" class="subbtn" style="display:inline;">
+                <input type="text" name="eventname" value={{ driver.event.id }} hidden>
+            </form>
+        </div>
+        <br><hr><br>
+    {% endfor %}
+
 {% endblock %}
