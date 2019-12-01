@@ -10,3 +10,7 @@
     background-color: white;
     width: 40px;
 }
+
+input#rider:checked ~ div#capdiv{
+  display:none;
+}

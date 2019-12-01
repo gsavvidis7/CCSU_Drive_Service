@@ -33,9 +33,10 @@
                 <h2>{{ event.id }} | {{ event.name }}</h2>
                 <p>{{ event.description }}</p>
                 <br>
-                <input type="radio" name="type" value="driver"> Driver
-                <input type="radio" name="type" value="rider" checked="checked"> Rider
-                <div>
+                <input type="radio" name="type" value="driver" id="driver">  <label id="id2" for="driver">Driver</label>
+                <input type="radio" name="type" value="rider" checked="checked" id="rider"> <label id="id1" for="rider">Rider</label>
+                <br>
+                <div id="capdiv" class="hide">
                     <br>
                     Capacity: <input type="number" name="captext" id="capbox" min="0" max="10">
                 </div>

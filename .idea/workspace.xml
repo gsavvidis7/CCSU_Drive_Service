@@ -4,7 +4,9 @@
     <list default="true" id="871c6d58-150c-4c5b-a81b-42fcc3bceee6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/events/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/events/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/events.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/events/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/events/events.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +73,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="CCSU_Drive_Service.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\gsavv\PycharmProjects\FirstProject\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -136,6 +138,8 @@
       <workItem from="1574883600149" duration="3505000" />
       <workItem from="1574887599501" duration="9457000" />
       <workItem from="1575151846773" duration="19201000" />
+      <workItem from="1575175864892" duration="918000" />
+      <workItem from="1575236493793" duration="3080000" />
     </task>
     <task id="LOCAL-00001" summary="Added logout to index and got login name working">
       <created>1574884991699</created>
