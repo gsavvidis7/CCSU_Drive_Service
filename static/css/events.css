@@ -5,3 +5,8 @@
 .eventhead{
     text-align: center;
 }
+
+#capbox {
+    background-color: white;
+    width: 40px;
+}
