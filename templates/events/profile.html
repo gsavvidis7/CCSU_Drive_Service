@@ -29,6 +29,10 @@
             <a href="{% url 'view_driver_profile' %}">View Driver Events </a>
             &nbsp | &nbsp
             <a href="{% url 'view_rider_profile' %}"> View Rider Events</a>
+            <br><br><br>
+            <h3>Username: {{ user.username }}</h3><br>
+            <h3>Name: {{ user.first_name }} {{ user.last_name }}</h3><br>
+            <h3>Email: {{ user.email }}</h3><br>
         </div>
     </div>
 
