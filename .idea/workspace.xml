@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="871c6d58-150c-4c5b-a81b-42fcc3bceee6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCSU_Drive_Service/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CCSU_Drive_Service/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,6 +151,7 @@
       <workItem from="1575346940119" duration="4508000" />
       <workItem from="1575351467330" duration="7346000" />
       <workItem from="1575359670970" duration="3951000" />
+      <workItem from="1575365532680" duration="848000" />
     </task>
     <task id="LOCAL-00001" summary="Added logout to index and got login name working">
       <created>1574884991699</created>
@@ -235,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575362710621</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Issue with static file settings when trying to upload to pythonanywhere">
+      <created>1575365685246</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1575365685246</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
