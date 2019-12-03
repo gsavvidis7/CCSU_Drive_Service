@@ -25,8 +25,8 @@
 
 
     {% for event in events %}
-        <div>
-            <form action="{% url 'signup' %}" method="POST" id="signform">
+        <div id="interface">
+            <form class="form_ajax" action="{% url 'signup' %}" method="POST" id="signform">
                 {% csrf_token %}
                 <input type="text" name="eventname" value={{ event.id }} hidden>
                 <input type="text" name="driverid" value={{ user.id }} hidden>

@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="871c6d58-150c-4c5b-a81b-42fcc3bceee6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/CCSU_Drive_Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CCSU_Drive_Service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/events.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/events/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/events/events.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,19 +22,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="3f0e9720-0a18-4a61-941c-2f98673d27fb" />
   </component>
   <component name="ProjectId" id="1TqkYmtkF6yi5mqfviREM1KPJyd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -44,6 +43,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/Documents and Settings" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -139,7 +141,14 @@
       <workItem from="1574887599501" duration="9457000" />
       <workItem from="1575151846773" duration="19201000" />
       <workItem from="1575175864892" duration="918000" />
-      <workItem from="1575236493793" duration="3080000" />
+      <workItem from="1575236493793" duration="3880000" />
+      <workItem from="1575257691675" duration="75000" />
+      <workItem from="1575262629133" duration="1264000" />
+      <workItem from="1575263934439" duration="214000" />
+      <workItem from="1575302170092" duration="602000" />
+      <workItem from="1575303406839" duration="249000" />
+      <workItem from="1575318669274" duration="2996000" />
+      <workItem from="1575333367403" duration="2884000" />
     </task>
     <task id="LOCAL-00001" summary="Added logout to index and got login name working">
       <created>1574884991699</created>
