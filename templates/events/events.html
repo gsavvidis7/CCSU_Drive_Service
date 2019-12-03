@@ -31,7 +31,7 @@
                 <input type="text" name="eventname" value={{ event.id }} hidden>
                 <input type="text" name="driverid" value={{ user.id }} hidden>
                 <h2>{{ event.id }} | {{ event.name }}</h2>
-                <p>{{ event.description }}</p>
+                <p>{{ event.location }} | {{ event.date }}</p>
                 <br>
                 <input type="radio" name="type" value="driver" id="driver">  <label id="id2" for="driver">Driver</label>
                 <input type="radio" name="type" value="rider" checked="checked" id="rider"> <label id="id1" for="rider">Rider</label>

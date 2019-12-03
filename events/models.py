@@ -4,7 +4,8 @@ from django.contrib.auth.models import User
 
 class Event(models.Model):
     name = models.CharField(max_length=200)
-    description = models.CharField(max_length=100)
+    date = models.CharField(max_length=100)
+    location = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
 
     def __str__(self):
