@@ -14,3 +14,7 @@
 input#rider:checked ~ div#capdiv{
   display:none;
 }
+
+a:hover {
+    color: yellow;
+}

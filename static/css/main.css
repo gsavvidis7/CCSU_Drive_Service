@@ -97,7 +97,7 @@ button:hover {
 #genre_disp{
     padding: 10px;
     width: 1000px;
-    margin: auto auto auto 320px;
+    margin: auto auto auto auto;
 }
 
 #genre_disp #left, #genre_disp #middle, #genre_disp #right{
