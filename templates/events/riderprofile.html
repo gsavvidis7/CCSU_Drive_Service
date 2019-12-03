@@ -30,13 +30,14 @@
                 {% csrf_token %}
                 <h2 style="display: inline">Event: {{rider.driver.event.name}} | Driver: {{ rider.driver.driver.first_name }} {{ rider.driver.driver.last_name }} | Email: {{ rider.driver.driver.email }}</h2>
                 <input type="submit" value="Remove Entry" class="subbtn" style="display:inline;">
-                <input type="text" name="eventid" value={{ rider.driver.event_id }} hidden>
+                <input type="text" name="eventid" value={{ rider.event.id }} hidden>
                 <input type="text" name="driverid" value={{ rider.driver.driver.id }} hidden>
-                <input type="text" name="riderid" value={{ rider.rider_id }} hidden>
-                <input type="text" name="drivername" value={{ rider.driver.driver_id }} hidden>
+                <input type="text" name="riderid" value={{ user.id }} hidden>
             </form>
         </div>
         <br><hr><br>
     {% endfor %}
+
+
 
 {% endblock %}

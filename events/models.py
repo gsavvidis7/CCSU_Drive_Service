@@ -8,8 +8,8 @@ class Event(models.Model):
     location = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
 
-    def __str__(self):
-        return self.name
+    def __int__(self):
+        return self.id
 
 
 class Driver(models.Model):
@@ -24,6 +24,7 @@ class Driver(models.Model):
 class Rider(models.Model):
     driver = models.ForeignKey(Driver, on_delete=models.CASCADE)
     rider = models.ForeignKey(User, on_delete=models.CASCADE)
+    event = models.ForeignKey(Event, on_delete=models.CASCADE)
 
     def __int__(self):
         return self.id

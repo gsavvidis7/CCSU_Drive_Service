@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Event, Driver, Rider
 from django.contrib.auth.models import User
+from django.http import HttpResponse
 
 
 def view_events(request):
@@ -35,48 +36,46 @@ def signup(request):
 
             validentry = Driver.objects.filter(event=eventinstance, driver=userinstance).first()
             if validentry is not None:
-                return render(request, 'events/driverexists.html')
+                return HttpResponse("Error: You are already signed up to drive for that event.")
 
-            testid = Rider.objects.filter(rider=userinstance).first()
+            testid = Rider.objects.filter(rider=userinstance, event=eventinstance).first()
             if testid is not None:
-                return render(request, 'events/rideranddriver.html')
+                return HttpResponse("Error: You cannot ride and drive for the same event.")
 
             driverentry = Driver(event=eventinstance, driver=userinstance, capacity=cap)
             driverentry.save()
-            return render(request, 'events/driver.html')
+            return HttpResponse("You have signed up to be a driver.")
         elif type in "rider":
             getriderevent = request.POST.get('eventname')
             ridereventinstance = Event.objects.get(id=getriderevent)
             finddriver = Driver.objects.filter(event=ridereventinstance, capacity__gt=0).first()
             if finddriver is not None:
                 getrideruser = request.POST.get('driverid')
-                getdriver = finddriver.driver_id
 
                 rideruserinstance = User.objects.get(id=getrideruser)
-                riderdriverinstance = Driver.objects.filter(driver=getdriver).first()
 
-                validrider = Rider.objects.filter(rider=rideruserinstance, driver=riderdriverinstance).first()
+                validrider = Rider.objects.filter(rider=rideruserinstance, event=ridereventinstance).first()
                 if validrider is not None:
-                    return render(request, 'events/riderexists.html')
+                    return HttpResponse("Error: You are already signed up to ride for that event.")
 
                 driverinstance = finddriver
                 getrider = request.POST.get('driverid')
                 riderinstance = User.objects.get(id=getrider)
-                riderentry = Rider(driver=driverinstance, rider=riderinstance)
+                riderentry = Rider(driver=driverinstance, rider=riderinstance, event=ridereventinstance)
 
                 testid = Driver.objects.filter(event=ridereventinstance, driver=rideruserinstance).first()
                 if testid is not None:
-                    return render(request, 'events/rideranddriver.html')
+                    return HttpResponse("Error: You cannot ride and drive for the same event.")
 
                 riderentry.save()
                 drivercap = finddriver.capacity
                 finddriver.capacity = drivercap - 1
                 finddriver.save()
-                return render(request, 'events/rider.html')
+                return HttpResponse("You have signed up to be a rider.")
             else:
-                return render(request, 'events/none.html')
+                return HttpResponse("Sorry: There are no current drivers for this event.")
     else:
-        return redirect('index')
+        return HttpResponse("Error: Method not POST")
 
 
 def view_profile(request):
@@ -108,15 +107,15 @@ def remove_driver_entry(request):
 
 def remove_rider_entry(request):
     if request.method == 'POST':
-        getdrivername = request.POST.get('drivername')
         getrideruser = request.POST.get('riderid')
-        driverinstance = Driver.objects.get(driver=getdrivername)
-        rideruserinstance = User.objects.get(id=getrideruser)
-        riderentry = Rider.objects.get(driver=driverinstance, rider=rideruserinstance)
+        geteventid = request.POST.get('eventid')
 
-        getevent = request.POST.get('eventid')
+        eventinstance = Event.objects.get(id=geteventid)
+        userinstance = User.objects.filter(id=getrideruser).first()
+        riderentry = Rider.objects.get(rider=userinstance, event=eventinstance)
+
         getdriveruser = request.POST.get('driverid')
-        eventinstance = Event.objects.get(id=getevent)
+        eventinstance = Event.objects.get(id=geteventid)
         driveruserinstance = User.objects.get(id=getdriveruser)
         driverentry = Driver.objects.filter(event=eventinstance, driver=driveruserinstance).first()
 

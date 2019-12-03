@@ -12,8 +12,8 @@ $(document).ready(function(){
             url: actionEndpoint,
             method: httpMethod,
             data: formData,
-            success: function(){
-                alert("Data Saved")
+            success: function(response){
+                alert(response)
 
             }
         })

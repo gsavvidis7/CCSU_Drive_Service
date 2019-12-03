@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="871c6d58-150c-4c5b-a81b-42fcc3bceee6" name="Default Changelist" comment="Updated the events model.">
-      <change afterPath="$PROJECT_DIR$/events/migrations/0003_auto_20191202_2058.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CCSU_Drive_Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CCSU_Drive_Service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="871c6d58-150c-4c5b-a81b-42fcc3bceee6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/events/migrations/0004_rider_event.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/events/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/events/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/events/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/events/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/events/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/events/driver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/events/driverexists.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/events/none.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/events/rider.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/events/rideranddriver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/events/riderexists.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/events/riderprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/events/riderprofile.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,15 +30,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="3f0e9720-0a18-4a61-941c-2f98673d27fb" />
   </component>
   <component name="ProjectId" id="1TqkYmtkF6yi5mqfviREM1KPJyd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -149,6 +159,8 @@
       <workItem from="1575303406839" duration="249000" />
       <workItem from="1575318669274" duration="2996000" />
       <workItem from="1575333367403" duration="2884000" />
+      <workItem from="1575346940119" duration="4508000" />
+      <workItem from="1575351467330" duration="4325000" />
     </task>
     <task id="LOCAL-00001" summary="Added logout to index and got login name working">
       <created>1574884991699</created>
@@ -185,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575170706818</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated the events model.">
+      <created>1575339980345</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575339980345</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +228,7 @@
     <MESSAGE value="Did work on the event models and pages and views" />
     <MESSAGE value="Made capacity dynamic for drivers and finished the rider sign up" />
     <MESSAGE value="Finished all of the functionality and validation for Driver/Rider sign up and Profile Page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished all of the functionality and validation for Driver/Rider sign up and Profile Page." />
+    <MESSAGE value="Updated the events model." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the events model." />
   </component>
 </project>
