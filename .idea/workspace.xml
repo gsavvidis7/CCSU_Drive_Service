@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="871c6d58-150c-4c5b-a81b-42fcc3bceee6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCSU_Drive_Service/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CCSU_Drive_Service/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-    </list>
+    <list default="true" id="871c6d58-150c-4c5b-a81b-42fcc3bceee6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +146,7 @@
       <workItem from="1575333367403" duration="2884000" />
       <workItem from="1575346940119" duration="4508000" />
       <workItem from="1575351467330" duration="7346000" />
-      <workItem from="1575359670970" duration="623000" />
+      <workItem from="1575359670970" duration="1149000" />
     </task>
     <task id="LOCAL-00001" summary="Added logout to index and got login name working">
       <created>1574884991699</created>
@@ -201,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575355977580</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Issue with static file settings when trying to upload to pythonanywhere">
+      <created>1575360425873</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575360425873</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +230,7 @@
     <MESSAGE value="Finished all of the functionality and validation for Driver/Rider sign up and Profile Page." />
     <MESSAGE value="Updated the events model." />
     <MESSAGE value="Fixed model issues and everything should work now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed model issues and everything should work now." />
+    <MESSAGE value="Issue with static file settings when trying to upload to pythonanywhere" />
+    <option name="LAST_COMMIT_MESSAGE" value="Issue with static file settings when trying to upload to pythonanywhere" />
   </component>
 </project>
